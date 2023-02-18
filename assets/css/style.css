@@ -1,0 +1,371 @@
+:root{
+    --vermelho-claro : #fe7867;
+    --amarelo : #fad400;
+    --verde-escuro : #1d433b;
+    --azul-marinho : #19536b;
+    --azul : #458c7e;
+    --azul-claro : #3DBEFF;
+    --azul-fosco : #2D7464;
+    --cinza-escuro : #23303e;
+    --cinza :#5a636c ;
+    --cinza-claro :	#818498 ;
+    --branco : 	#ffffff;
+    --azul-footer : #90D4C5;
+    --font-texto : 'Barlow';
+    --font-titulos :'Fraunces';
+}
+
+/*menu*/
+
+.container__background{
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 80vh;
+    
+   
+}
+
+.container__nav__desktop{
+    display: none;
+}
+
+
+
+.container__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.nav__botao{
+    background-color: transparent;
+    border: none;
+}
+
+#nav.active .nav__lista__mobile{
+    display: block;
+}
+
+.container__nav__mobile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+.nav__lista__mobile{
+    display: none;
+    position: absolute;
+    background-color: var(--branco);
+    margin-top: 64px;
+    width: 85%;
+    height: 40vh;
+    text-align: center;
+    
+    
+}
+
+.nav__lista__item__mobile{
+    margin: 40px;
+}
+
+.nav__lista__item__mobile a {
+    color: var(--cinza-claro);
+    text-decoration: none;
+    font-family: var(--font-texto);
+    font-size: 20px;
+}
+
+.contato a{
+    background-color: var(--amarelo);
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    color: var(--cinza-escuro);
+}
+
+
+
+
+/*Conteudo menu principal*/
+
+.conteudo__menu{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.conteudo__menu__titulo{
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 900;
+    color: var(--branco);
+    font-family: var(--font-titulos);
+    line-height: 50px;
+}
+
+.conteudo__menu__img{
+    margin-top: 50px;
+}
+
+/*Section ovo*/
+
+.section__ovo__img{
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+}
+
+.section__ovo__titulo{
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.section__titulo{
+    font-size: 35px;
+    font-family: var(--font-titulos);
+    font-weight: 900;
+    line-height: 40px;
+    color: var(--cinza-escuro);
+}
+
+.section__texto{
+    margin-top: 20px;
+    color: var(--cinza-claro);
+    font-size: 16px;
+    line-height: 30px;
+    font-family: var(--font-texto);
+    margin-bottom: 20px;
+}
+
+.section__button{
+    text-decoration: none;
+    color: var(--cinza-escuro);
+    font-family: var(--font-texto);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-bottom:2px solid var(--vermelho-claro);
+    box-shadow: 2px 2px #fe79671d;
+}
+
+.section__taca__img{
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 40vh;
+}
+
+.section__taca__titulo{
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+/*section fruta*/
+
+.section__frutas{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section__cereja{
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+ 
+    
+}
+
+.section__conteudo__fruta{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.section__titulo__fruta{
+    font-size: 30px;
+    font-family: var(--font-titulos);
+    color: var(--verde-escuro);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.section__texto__fruta {
+    font-size: 16px;
+    font-family: var(--font-texto);
+    color: var(--verde-escuro);
+    line-height: 25px;
+    font-weight: 600;
+
+}
+
+.section__laranja{
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.laranja{
+    color: var(--azul-marinho);
+}
+
+/*comentarios*/
+
+.comentarios__lista__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.comentatios__titulo{
+    font-size: 24px;
+    font-family: var(--font-texto);
+    letter-spacing: 5px;
+    color: var(--cinza);
+    font-weight: 900;
+    
+
+}
+
+.comentarios__lista__img{
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 70px;
+}
+
+.comentarios__clientes{
+    padding: 30px;
+    text-align: center;
+}
+
+.comentarios__lista__texto{
+    font-family: var(--font-texto);
+    color: var(--cinza-escuro);
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.comentarios__nome__cliente{
+    font-family: var(--font-titulos);
+    color: var(--cinza-escuro);
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.comentarios__profissao__cliente{
+    color: var(--cinza-claro);
+    font-family: var(--font-texto);
+    font-size: 14px;
+}
+
+/*Section imagens*/
+
+.lista__imagens{
+    display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+    
+}
+
+
+
+.imagens__item:nth-child(1) {
+    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: center;
+}
+
+.imagens__item:nth-child(3) {
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: center;
+
+}
+
+.imagens__item:nth-child(4) {
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: center;
+}
+
+.imagens__item:nth-child(2) {
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-position: center;
+}
+
+/*Footer*/
+
+.container__footer{
+    background-color: var(--azul-footer);
+    text-align: center;
+    padding: 30px;
+    font-family: var(--font-texto);
+    height: 20vh;
+    
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px;
+    
+    
+}
+
+.footer__titulo{
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--azul-fosco);
+}
+
+.footer__menu__item a{
+    color: var(--azul-fosco);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.redes__socias{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+
+}
+
+

@@ -1,0 +1,191 @@
+:root{
+    --vermelho-claro : #fe7867;
+    --amarelo : #fad400;
+    --verde-escuro : #1d433b;
+    --azul-marinho : #19536b;
+    --azul : #458c7e;
+    --azul-claro : #3DBEFF;
+    --azul-fosco : #2D7464;
+    --cinza-escuro : #23303e;
+    --cinza :#5a636c ;
+    --cinza-claro :	#818498 ;
+    --branco : 	#ffffff;
+    --azul-footer : #90D4C5;
+    --font-texto : 'Barlow';
+    --font-titulos :'Fraunces';
+}
+
+/*container__nav__desktop*/
+
+@media (min-width : 768px) {
+   .nav__botao{
+    display: none;
+   }
+   
+   .container__nav__desktop{
+        display: block; 
+        padding: 10px;
+   }
+
+   .nav__lista__desktop{
+        display: flex;
+        gap: 16px;
+        font-family: var(--font-texto);
+        
+
+   }
+
+   .nav__lista__item__desktop a{
+        color: var(--branco);
+        text-decoration: none;
+        
+        font-size: 18px;
+        font-weight: 400;
+   }
+
+
+
+   .contato__desktop a{
+        color: var(--cinza-escuro);
+        background-color: var(--branco);
+        padding: 10px;
+        border-radius: 18px;
+
+        
+   }
+
+   .container__nav__mobile{
+        display: none;
+   }
+
+   .container__menu{
+        display: flex;
+   }
+
+   
+
+   
+
+}
+
+@media (min-width : 1024px) {
+    .container__background{
+        background-image: url(../images/desktop/image-header.jpg);
+        height: 98vh;
+    }
+
+    .conteudo__menu__titulo{
+        font-size: 45px;
+    }
+
+    .section__ovo{
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row-reverse;
+    }
+    
+    .section__ovo__img{
+        background-image: url(../images/desktop/image-transform.jpg);
+        width: 50%;
+        height: 60vh;
+       
+    }
+
+    .section__ovo__titulo{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+    }
+
+    
+
+    .section__taca{
+        display: flex;
+    }
+
+    .section__taca__img{
+        background-image: url(../images/desktop/image-stand-out.jpg);
+        width: 50%;
+        height: 60vh;
+    }
+
+    .section__taca__titulo{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .section__frutas{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .section__cereja{
+        background-image: url(../images/desktop/image-graphic-design.jpg);
+        width: 50%;
+        height: 73vh;
+    }
+
+    .section__laranja{
+        background-image: url(../images/desktop/image-photography.jpg);
+        width: 50%;
+        height: 73vh;
+    }
+
+    .comentarios__lista{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+  
+    .lista__imagens{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .imagens__item:nth-child(1) {
+        background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        background-position: center;
+    }
+    
+    .imagens__item:nth-child(3) {
+        background-image: url(../images/desktop/image-gallery-cone.jpg);
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        background-position: center;
+    
+    }
+    
+    .imagens__item:nth-child(4) {
+        background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        background-position: center;
+    }
+    
+    .imagens__item:nth-child(2) {
+        background-image: url(../images/desktop/image-gallery-orange.jpg);
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50vh;
+        background-position: center;
+    }
+}
